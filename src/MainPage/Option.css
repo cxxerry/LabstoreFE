@@ -1,0 +1,136 @@
+.toggleSwitch {
+  width: 100px;  
+  height: 50px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+  cursor: pointer;
+  margin: 30px;
+}
+
+.toggleSwitch .toggleButton {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: gray;
+}
+
+#toggle:checked ~ .toggleSwitch {
+  background:gray;
+}
+
+#toggle:checked ~ .toggleSwitch .toggleButton {
+  left: calc(100% - 44px);
+  background: #fff;
+}
+
+.toggleSwitch, .toggleButton {
+  transition: all 0.2s ease-in;
+}
+
+.toggle-group {
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+font-size: 14px;
+}
+
+.toggle-text {
+  font-size: 16px;
+}
+
+/* .option-header {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  background-color: aqua;
+} */
+
+.option-box{
+  text-align: center;
+  position:relative;
+  margin-top: 30px;
+}
+.option-list {
+  width: 70%;
+  align-content: space-between;
+  margin-left:auto; 
+  margin-right:auto; 
+}
+
+.option-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 요소들을 왼쪽과 오른쪽으로 정렬 */
+  /* padding: 10px;  */
+  align-items: start;
+}
+
+.option-body {
+  display: flex;
+  flex-direction: row;
+  padding-left: 70px; 
+  align-items: start;
+margin-top: 40px;
+}
+.option-line{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 1000px; 
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox {
+  display: flex;
+  flex-basis: calc(100% - 10px); /* 6개의 항목을 가로로 배치하므로 각 항목의 크기는 16.666%로 계산 (10px은 간격을 고려한 값) */
+  /* 기타 스타일 */
+}
+
+.title {
+  text-align: start;
+  padding-right: 40px;
+  color: gray;
+}
+
+.more-option-btn {
+  border: 2px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  cursor: pointer;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  border-radius: 40px;
+
+  margin-left:auto; 
+  margin-right:auto; 
+}
+
+.btn-title {
+  text-align: left;
+
+}
+
+.more-option{
+  position:relative;
+  align-items: center;
+  padding-top: 10px;
+  margin-top: 10px;
+}
